@@ -1,0 +1,16 @@
+#board{
+	width: 400px;
+}
+.s_kl,.t_kl{
+	width: 50PX;
+	height: 50PX;
+	float:left;
+	padding: 0px;
+	margin: 0px;
+}
+.s_kl{
+	background: white;
+}
+.t_kl{
+	background: black;
+}

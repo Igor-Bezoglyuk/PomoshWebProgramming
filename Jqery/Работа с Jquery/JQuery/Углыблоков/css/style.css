@@ -1,0 +1,30 @@
+#border{
+	position: absolute;
+	width: 50%;
+	height: 50%;
+	background: blue;
+}
+#border2{
+	position: relative;
+	top: 43px;
+    width: 86%;
+    height: 75%;
+	margin:0 auto;
+	background: red;
+}
+#border3{
+	position: relative;
+	top: 30px;
+    width: 86%;
+    height: 75%;
+	margin:0 auto;
+	background: blue;
+}
+#border4{
+	position: relative;
+	top: 23px;
+    width: 86%;
+    height: 75%;
+	margin:0 auto;
+	background: red;
+}

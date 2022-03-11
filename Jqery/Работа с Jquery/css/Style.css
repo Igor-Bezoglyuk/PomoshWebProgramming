@@ -1,0 +1,248 @@
+body{
+	position: relative;
+	top: 0;
+	right: 0%;
+	width: 102%;
+	height: 100%;
+}
+header{
+	position: relative;
+	top: 0;
+	right: 0%;
+	width: 965px;
+	height: 700px;
+	margin:0 auto;
+}
+#KontentDiv{
+	position: relative;
+	top: 0;
+	right: 0%;
+	width: 30%;
+	height: 200px;
+	background: orange;
+	display: inline-block;
+	margin-right: 5px;
+	padding: 5px;
+}
+#KontentDiv2{
+	position: relative;
+	top: 0;
+	right: 0%;
+	width: 30%;
+	height: 200px;
+	background: orange;
+	display: inline-block;
+	margin-right: 5px;
+	padding: 5px;
+}
+#KontentDiv3{
+	position: relative;
+	top: 0;
+	right: 0%;
+	width: 30%;
+	height: 200px;
+	background: orange;
+	display: inline-block;
+	margin-right: 5px;
+	padding: 5px;
+}
+#Kontent, #Kontent2, #Kontent3{
+	margin:5px;
+	width: 50px;
+	height: 100px;
+	background: grey;
+	display: none;
+	float: left;
+}
+#KontentDivKnopka,#KontentDivKnopka2,#KontentDivKnopka3{
+	position: relative;
+	top: 0;
+	right: -1%;
+	width: 10%;
+	height: 50px;
+	border:none;
+
+}
+#KontentDivKnopka:hover{
+	background: black;
+	color: white;
+}
+#Kontentimg{
+	position:relative;
+	top: 0;
+	right: 0%;
+	width: 20%;
+	height: 100px;
+	margin-top: 5px;
+	background:url(../img/1.jpg);
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+#Kontentimg2{
+	position:relative;
+	top: 0;
+	right: 0%;
+	width: 20%;
+	height: 100px;
+	margin-top: 5px;
+	background:url(../img/1.jpg);
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+#Kontentimg3{
+	position:relative;
+	top: 0;
+	right: 0%;
+	width: 20%;
+	height: 100px;
+	margin-top: 5px;
+	background:url(../img/1.jpg);
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+#Knopka,#Knopka2{
+	position: relative;
+	top:0;
+	right: 0%;
+	width: 10%;
+	height: 50px;
+	margin-top: 10px;
+}
+
+#Kontentblock,#Kontentblock2,#Kontentblock3{
+	position: relative;
+	top:0;
+	right: 0%;
+	width: 20%;
+	height: 200px;
+	margin-top: 20px;
+	background: blue;
+}
+#Kontentindex4{
+	position: absolute;
+	top: 9px;
+    right: 3%;
+    width: 20%;
+    height: 373px;
+    background: orange;
+    bottom:;
+    background: 
+}
+#Knopkaindex4{
+	position: absolute;
+	top:405px;
+	right: 3%;
+	width: 20%;
+	height: 50px;
+	text-align: center;
+	font-family: monospace;
+	font-size: 20px;
+	color: white;
+	text-shadow: 0px 0px 3px black;
+}
+
+#TextInput{
+	position: relative;
+	top: 0;
+	right: -10%;
+	width: 80px;
+	height: 50px;
+	display: block;
+	margin-top: 10px;
+
+}
+#Knopkaindex7{
+	position: relative;
+	top: 0;
+	right: -10%;
+	width: 100px;
+	height: 50px;
+	display: inline-block;
+}
+#Knopkaindex27{
+	position: relative;
+	top: 0;
+	right: -10%;
+	width: 100px;
+	height: 50px;
+	display: inline-block;
+}
+
+#Knopkaindex8,#Knopkaindex82,#Knopkaindex83{
+	position: relative;
+	top: 0;
+	right: 0%;
+	width: 100px;
+	height: 30px;
+	display: inline-block;
+}
+
+.block{
+	position: relative;
+	top: 0;
+	right: 0%;
+	width: 10%;
+    height: 190px;
+	background: orange;
+}
+.block2{
+	position: relative;
+	top: 0;
+	right: 0%;
+	width: 10%;
+    height: 150px;
+	border-radius: 100%;
+	background:green;
+}
+.block3{
+	position: relative;
+	top: 0;
+	right: 0%;
+	width: 10%;
+    height: 150px;
+	border-radius: 20%;
+	background:blue;
+}
+.block4{
+	position: relative;
+	top: 0;
+	right: 0%;
+	width: 10%;
+    height: 190px;
+    border:solid 2px red;
+	background:aqua;
+}
+#Knopkaindex9,#Knopkaindex92,#Knopkaindex93,#Knopkaindex94{
+	position: relative;
+	top: 0;
+	right: 0%;
+	width: 100px;
+	height: 30px;
+	display: inline-block;
+}
+#blockindex10{
+	position: relative;
+	top:0;
+	right: 0%;
+	width: 20%;
+	height: 50px;
+	background: grey;
+}
+strong{
+	position: absolute;
+	top:200px;
+	right: 0%;
+	width:100%;
+	text-align: center;
+}
+#Knopkaindex10,#Knopkaindex102,#Knopkaindex103{
+	position: relative;
+	top: 0;
+	right: 0%;
+	width: 100px;
+	height: 30px;
+	display: inline-block;
+}

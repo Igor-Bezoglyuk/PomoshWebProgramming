@@ -1,0 +1,135 @@
+article{
+	position: relative;
+	top: 0;
+	right: 0%;
+	width: 100%;
+	height: 1000px;
+}
+#Kontent{
+	position: relative;
+	top: 0;
+	right: 0%;
+	width: 985px;
+	height: 100%;
+	margin: 0 auto;
+	background: #eaeaea;
+}
+#Kontentblcks{
+	position: relative;
+    top: 17px;
+    right: -2%;
+    width: 23%;
+    height: 305px;
+    display: inline-block;
+    margin-right: 9px;
+    margin-top: 10px;
+    background: black;
+    transition-duration: 0.4s;
+}
+#Kontentblcks:hover{
+    transform: translateX(7px) translateY(-10px);
+    box-shadow: -4px 3px 0px 3px black;
+}
+#Kontentblocksimg{
+	position: absolute;
+	top: 0;
+	right: 0%;
+	width: 100%;
+	height: 100%;
+	background:url(https://screen.tildacdn.com/i/u/8ceffe841229c28fa5776d0a0db245d9_720_1240.jpg);
+	background-position: 50% 0%;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+#Kontentblocksimg2{
+	position: absolute;
+	top: 0;
+	right: 0%;
+	width: 100%;
+	height: 100%;
+	background:url(https://screen.tildacdn.com/i/u/8ceffe841229c28fa5776d0a0db245d9_720_1240.jpg);
+	background-position: 50% 0%;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}#Kontentblocksimg3{
+	position: absolute;
+	top: 0;
+	right: 0%;
+	width: 100%;
+	height: 100%;
+	background:url(https://screen.tildacdn.com/i/u/8ceffe841229c28fa5776d0a0db245d9_720_1240.jpg);
+	background-position: 50% 0%;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+#Kontentblocksimg4{
+	position: absolute;
+	top: 0;
+	right: 0%;
+	width: 100%;
+	height: 100%;
+	background:url(https://screen.tildacdn.com/i/u/8ceffe841229c28fa5776d0a0db245d9_720_1240.jpg);
+	background-position: 50% 0%;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+#Kontentblocksimg5{
+	position: absolute;
+	top: 0;
+	right: 0%;
+	width: 100%;
+	height: 100%;
+	background:url(https://screen.tildacdn.com/i/u/8ceffe841229c28fa5776d0a0db245d9_720_1240.jpg);
+	background-position: 50% 0%;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+#Kontentblocksimg6{
+	position: absolute;
+	top: 0;
+	right: 0%;
+	width: 100%;
+	height: 100%;
+	background:url(https://screen.tildacdn.com/i/u/8ceffe841229c28fa5776d0a0db245d9_720_1240.jpg);
+	background-position: 50% 0%;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+#Kontentblocksimg7{
+	position: absolute;
+	top: 0;
+	right: 0%;
+	width: 100%;
+	height: 100%;
+	background:url(https://screen.tildacdn.com/i/u/8ceffe841229c28fa5776d0a0db245d9_720_1240.jpg);
+	background-position: 50% 0%;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+#Kontentblocksimg8{
+	position: absolute;
+	top: 0;
+	right: 0%;
+	width: 100%;
+	height: 100%;
+	background:url(https://screen.tildacdn.com/i/u/8ceffe841229c28fa5776d0a0db245d9_720_1240.jpg);
+	background-position: 50% 0%;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+#Kontentblockdarck{
+	position: absolute;
+	top: 0;
+	right: 0%;
+	width: 100%;
+	height: 100%;
+	transition-duration: 1s;	
+}
+#Kontentblockdarck:hover{
+	background: #600080d4;
+	background-repeat: no-repeat;
+    background-image: url(../img/icons8.png);
+    background-position: 50% 50%;
+    background-size: 95px;
+    opacity: 1;
+}
