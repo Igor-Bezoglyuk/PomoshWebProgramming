@@ -14,7 +14,7 @@
         
 		<div class="uk-container uk-container-center">
             <?while(have_posts()): the_post();?> //подключение псевдо полей  куда мы записываем контент 
-			<h2><?echo get_field ("block_aboutus_title");?></h2> // подключает определёное поле через его имя 
+			<h2><?echo get_field ("block_aboutus_title");?></h2> // подключает определёное поле через его имя которые создаются в плагине  Advanced Custom Fields
 			<p><?echo get_field ("block_aboutus_text");?></p>
 
 			<div class="video-2">
