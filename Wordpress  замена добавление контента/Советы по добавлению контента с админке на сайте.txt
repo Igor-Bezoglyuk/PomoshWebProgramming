@@ -1,0 +1,28 @@
+<?
+		$current_page = (get_query_var('paged')) ? get_query_var('paged') : 1;
+		$params = array(
+			'posts_per_page'  => -1, 
+			'post_type'		  => 'aboutus', // Имя "name" поста 
+			'paged'           => $current_page
+		);
+
+		query_posts($params);?>  // Подключение постов созданые в админке плагином Pods — Custom Content Types and Fields
+
+	<div id="About" class="video" style="background-image:<?echo get_field ('block_aboutus_background');?>">
+
+		<div class="overlay"></div>
+        
+		<div class="uk-container uk-container-center">
+            <?while(have_posts()): the_post();?> //подключение псевдо полей  куда мы записываем контент 
+			<h2><?echo get_field ("block_aboutus_title");?></h2> // подключает определёное поле через его имя 
+			<p><?echo get_field ("block_aboutus_text");?></p>
+
+			<div class="video-2">
+				<iframe type="text/html" src="<?echo get_field ('block_aboutus_video_link');?>" allowfullscreen></iframe>
+			</div>
+
+			<?endwhile;?> //подключение псевдо полей  куда мы записываем контент 
+
+		</div>
+        
+	</div>
