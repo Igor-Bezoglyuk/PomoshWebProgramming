@@ -88,3 +88,5 @@ $('.t706__orderform').append($('.t706__form-bottom-text'));
 $('.t706__orderform').prepend($('.t706__form-upper-text'));
 });
 </script>
+
+https://romanyu.ru/stilizaciya-korziny - сайт для стилизации страницы корзины 
