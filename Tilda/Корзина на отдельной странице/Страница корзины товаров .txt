@@ -1,1 +1,90 @@
+Инструкция
+1 - Создаем страницу для корзины
 
+Создали страницу на которой будет отображаться корзина, назовем её просто "Корзина" и зададим адрес "basket".
+
+Добавляем на нее следующие блоки:
+Заголовок, чтобы люди понимали куда они попали.
+Блок "Т123", и скопировали туда КОД 1 - это и будет будущая корзина.
+КОД 1:
+
+<style>
+.t706__body_cartwinshowed {
+height: auto;
+min-height: auto;
+overflow: auto;
+}
+
+.t706__cartwin {
+display: block;
+position: static;
+background: #fff;
+overflow: unset;
+opacity: 1 !important;
+}
+
+.t706__cartwin-content {
+position: relative;
+max-width: 1200px;
+height: 100%;
+padding: 40px 20px;
+margin: 0 auto;
+background: #fff;
+overflow: unset;
+}
+
+@media (min-width: 960px) {
+.t706__cartwin-content {
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+}
+}
+
+@media (min-width: 960px) {
+.t706__orderform {
+max-width: 40%;
+width: 100%;
+margin-left: auto;
+}
+}
+
+.t706__cartwin-close,
+.t706__carticon {
+display: none;
+}
+
+
+@media (min-width: 960px) {
+.products-fixed-list {
+position: -webkit-sticky;
+position: sticky;
+-ms-flex-item-align: start;
+align-self: flex-start;
+top: 20px;
+max-width: 50%;
+width: 100%;
+}
+}
+
+.t706__form-upper-text {
+padding-top: 0;
+}
+
+.body {
+ overflow: auto !important;
+}
+</style>
+
+<script>
+$(document).ready(function() {
+setTimeout(function() {
+t_onFuncLoad('tcart__openCart', function() {
+tcart__openCart();
+});
+}, 1000);
+$('.t706__cartwin-top, .t706__cartwin-products, .t706__cartwin-bottom').wrapAll('<div class="products-fixed-list"></div>');
+$('.t706__orderform').append($('.t706__form-bottom-text'));
+$('.t706__orderform').prepend($('.t706__form-upper-text'));
+});
+</script>
