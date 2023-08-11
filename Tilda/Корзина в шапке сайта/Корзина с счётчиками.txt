@@ -1,1 +1,73 @@
-T
+Как сделать свою иконку корзины товаров в zero block
+Чтобы сделать свою корзину в тильде, выполните несколько простых шагов:
+
+1) Создайте zero block.
+2) Нажмите на кнопку «Редактировать блок».
+3) Удалите стандартный контент.
+4) Найдите пункт «GRID CONTAINER HEIGHT» и пропишите высоту блока в пикселях. Например, 80.
+5) Этот блок будет вашим навигационным меню.
+6) Стилизуйте блок, добавляйте нужные вам ссылки, логотип и т.д.
+7) Нажмите на кнопку «+» и выберите пункт «Add Image».
+8) Загрузите заранее подготовленную иконку для вашей корзины в zero block.
+9) Расположите иконку в нужном вам месте.
+10) Нажмите на кнопку «+» и добавьте два текстовых блока («Add Text»).
+11) В одном текстовом блоке пропишите цифру 0. Это индикатор, который будет показывать количество добавленных товаров в корзину.
+12) В другом текстовом блоке пропишите знак «=». Этот блок будет показывать общую стоимость товаров в корзине.
+13) Вы можете расположить индикатор с цифрой 0 на иконке корзины, а блок со знаком «=» слева или справа от корзины.
+14) Нажмите на блок с цифрой 0 правой кнопкой мыши и выберите «Add css class name». В соответствующем поле пропишите класс «cartcopy_elem».
+15) Пропишите точно такой же класс для иконки вашей корзины.
+16) Нажмите на блок со знаком «=» правой кнопкой мыши и выберите «Add css class name». В соответствующем поле пропишите класс «cartprice_elem».
+  Сохраните изменения и выйдите из зеро блока.
+
+
+
+Своя корзина в zero block. Добавление и изменение стандартного функционала магазина
+Итак, создали свою иконку корзины. Но она не будет работать без добавления стандартной корзины в Tilda Publishing. Поэтому, следуйте следующим инструкциям:
+
+1)В главном меню вашей страницы нажмите на кнопку «Все блоки».
+2)Найдите пункт «Магазин».
+3)Добавьте блок «ST100. Корзина с формой заказа».
+4)Добавьте любой блок с карточкой товара.
+5)Из пункта «Другое» добавьте блок «T123. HTML-код».
+6)Нажмите на кнопку «Контент».
+7)Скопируйте следующий код и вставьте в блок html:
+
+<style>
+.blkElem{pointer-events:none; }
+.cartcopyanim {
+-webkit-animation: t706__pulse-anim 0.6s;
+animation: t706__pulse-anim 0.6s;}
+.cartcopy_elem .tn-atom , .cartprice_elem .tn-atom {display:block}
+.cartcopy{cursor:pointer}
+.t706__carticon {display: none !important;} 
+</style>
+<script>
+$( document ).ready(function() {
+   let hideMode = false; //Скрыть-Показать пустую корзину - true-false
+   $('.cartcopy_elem .tn-atom').addClass('cartcopy');
+   $('.cartprice_elem .tn-atom').addClass('cartcopyprice');
+   function chkNum(){
+   if(!hideMode) $('.cartcopy, .cartcopyprice').show();   
+   let chCounter = window.tcart.total;
+   let chPrice = window.tcart.prodamount;
+   if  (chPrice==0){
+        $('div[data-elem-type="text"] .cartcopyprice').html(''); 
+        if(hideMode) {$('.cartcopy, .cartcopyprice').hide()
+        }else{$('.cartcopy, .cartcopyprice').show()};
+   }else{ 
+       $('div[data-elem-type="text"] .cartcopyprice').html(chPrice+' руб'); 
+          if(hideMode) $('.cartcopy, .cartcopyprice').show();
+   };
+   $('div[data-elem-type="text"] .cartcopy').html(chCounter);
+   if(chCounter==0){ $('.cartcopy').addClass('blkElem');
+   }else{ $('.cartcopy').removeClass('blkElem'); }; 
+   if(chCounter==''){$('div[data-elem-type="text"] .cartcopy').html(0);}; };
+       setTimeout(function(){chkNum();}, 500);
+   $(".t706").on('DOMSubtreeModified', ".t706__carticon-counter", function() {
+       setTimeout(function(){chkNum();}, 300);
+   $('div[data-elem-type="image"] .cartcopy').addClass('cartcopyanim');    
+   setTimeout(function(){ $('.cartcopy').removeClass('cartcopyanim');}, 1000);});
+   $('.cartcopy').click(function(e){e.preventDefault();tcart__openCart();});
+});	
+</script>
+
