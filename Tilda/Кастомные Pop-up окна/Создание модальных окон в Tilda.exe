@@ -1,1 +1,37 @@
+1) Создать Zero-block с блокм или кнопкой активирующий, модальное окно. Добавте ссылку, с блока модального окна BF503	.
+2) После содайте модальное окно через Zero blcoks. Желательно что  бы блок контейнер основной был прозрачный. Модальное окно будеет shape. Создаёи  иконку закурытия и добавляем ссылкой #exit
+3) После чего находим блок офицальный BF503, посде чего удаляем весь контент (текст,изображение, и.т.д) и назавите ссылку свою для модального окна. Пример :#popup:infopopup
+4) Добавляем блок T123	 с html кодом , что бы добавть туда скрипт работы pop-up окна:
+<style>
 
+.shirina{
+
+background:none !important;
+
+right: 0 !important;
+
+left: 0 !important;
+
+}
+
+.parpadding{
+
+padding:0 !important;
+
+}
+
+</style>
+
+<script>
+
+var ZeroPopID = '#rec629751750'; //Прописываем ID Zero
+
+var PopWindID = '#rec629753000'; //Прописываем ID PopUp окна BF503
+
+//Переносим ZeroBlock в POPup + Добавляем новый клас в POPup
+
+$(PopWindID + " .t-popup__container").addClass("shirina").html($(ZeroPopID));
+
+$(PopWindID + " .t-popup__container").parent(".t-popup").addClass("parpadding")
+
+</script>
