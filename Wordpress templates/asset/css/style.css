@@ -1,0 +1,655 @@
+@charset "UTF-8";
+body {
+  margin: 0px;
+  font-family: roboto, Arial, sans-serif, monospace;
+}
+
+header {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  z-index: 9;
+}
+
+.heder-block {
+  position: relative;
+  padding: 25px;
+}
+
+.headericon {
+  position: relative;
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+}
+
+.Open {
+  position: relative;
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+  cursor: pointer;
+}
+
+.Open-Mobile {
+  position: relative;
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+
+.Menu {
+  position: fixed;
+  top: 0px;
+  right: 0%;
+  width: 300px;
+  height: 100%;
+  background: #07090ce0;
+  display: none;
+  list-style: none;
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  padding-left: 33px;
+  padding-top: 33px;
+  -webkit-box-shadow: 6px 0px 35px 1px #004646;
+          box-shadow: 6px 0px 35px 1px #004646;
+}
+
+.Menuli {
+  position: relative;
+  text-align: left;
+  font-family: roboto, Arial, monospace;
+  font-size: 20px;
+  font-weight: 300;
+  color: white;
+  display: block;
+  margin-top: 15px;
+}
+
+.MenuSilka {
+  position: relative;
+  text-decoration: none;
+  color: white;
+}
+
+.Close {
+  position: absolute;
+  top: 0px;
+  right: 0%;
+  width: 43px;
+  height: 34px;
+  text-align: center;
+  font-family: roboto, sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  color: #39c1a1;
+  cursor: pointer;
+  margin: 20px;
+}
+
+/*________________________________________________________________________________________________________________*/
+#Kontent {
+  position: relative;
+  width: 100%;
+  background: url("../img/banner.jpg") no-repeat 50% 50%/cover;
+}
+#Kontent::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0%;
+  width: 100%;
+  height: 100%;
+  background: #00000075;
+}
+
+.Kontnt-blocks {
+  position: relative;
+}
+
+.KontentLogo {
+  position: relative;
+  width: 150px;
+  height: auto;
+  padding: 20px;
+  border-radius: 100%;
+  border: solid 2px white;
+  margin: 0 auto;
+}
+.KontentLogo img {
+  position: relative;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.Kontenttext {
+  position: relative;
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+}
+
+.Kontentstroka {
+  position: relative;
+  font-weight: 300;
+  font-size: 25px;
+  color: white;
+}
+
+.KontentKnopka {
+  position: relative;
+  height: auto;
+  padding: 10px 20px;
+  background: #39c1a1;
+  color: white;
+  font-size: 20px;
+  font-weight: 300;
+  outline: none;
+  border-radius: 50px;
+  border: none;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.KontentKnopka:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.KontentKnopka:hover {
+  background: none;
+  border: solid 1px #39c1a1;
+  color: #39c1a1;
+}
+
+/*________________________________________________________________________________________________________________*/
+#Kontent2 {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background: #EEE;
+}
+
+.Kontent2Blocks {
+  position: relative;
+  margin-bottom: 25px;
+  padding: 0px;
+  background: white;
+  display: block;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 0px 28px -7px grey;
+          box-shadow: 0px 0px 28px -7px grey;
+}
+.Kontent2-blocks-img{
+position: relative;
+width: 500px;
+height: auto;
+}
+.Kontent2Blocks img {
+  position: relative;
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.Kontent2Blocks h6 {
+  position: relative;
+  font-size: 25px;
+  font-weight: 500;
+  padding-top: 20px;
+  text-transform: uppercase;
+}
+.Kontent2Blocks p {
+  position: relative;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.Kontent2-blocks-texts {
+  position: relative;
+  padding: 20px;
+}
+
+.Kontent2BlocksKnopka {
+  position: relative;
+  padding: 10px 10px;
+  background: none;
+  border: solid 1px #39c1a1;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 300;
+  color: #39c1a1;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.Kontent2BlocksKnopka:hover {
+  background: #39c1a1;
+  color: white;
+  border: none;
+}
+.Kontent2BlocksKnopka:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.Kontent2Modal {
+  position: fixed;
+  top: 0;
+  right: 0%;
+  width: 100%;
+  height: 100%;
+  background: #000000d4;
+  display: none;
+  z-index: 999;
+}
+
+.Kontent2ModalBlock {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 800px;
+  height: 800px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.Контент2Okno {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 20px -1px #297f7f;
+          box-shadow: 0px 0px 20px -1px #297f7f;
+  background: white;
+  padding: 10px 0px;
+}
+
+.Kontent2Logo {
+  position: relative;
+  text-align: left;
+  font-size: 25px;
+  font-weight: 900;
+  color: #64c1ae;
+  padding: 10px 13px;
+}
+
+.Kontent2Logo::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0%;
+  width: 100%;
+  height: 2px;
+  background: #64c1ae;
+}
+
+.Kontent2-Close {
+  position: absolute;
+  top: 0%;
+  left: 100%;
+  width: 9%;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 300;
+  color: #80f7de;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+}
+
+.Close:hover {
+  color: aqua;
+}
+.Kontent2-modal-block-img{
+position: relative;
+width: 100%;
+height: 300px;
+}
+.Kontent2-modal-block-img Img {
+  position: relative;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.Kontent2OknoText {
+  position: relative;
+  width: 100%;
+  font-size: 25px;
+  font-weight: 400;
+  color: black;
+}
+
+.Kontent2OknoStroka {
+  position: relative;
+  width: 81%;
+  font-size: 18px;
+  font-weight: 300;
+  color: black;
+}
+
+/*________________________________________________________________________________________________________________*/
+#Kontent3 {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.Kontent3-block {
+  position: relative;
+  text-transform: uppercase;
+}
+
+.Kontent3BlockText {
+  position: relative;
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.Kontent3BlockStroka {
+  position: relative;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.kontent3-blocks-gallery {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+.kontent3-blocks-gallery img {
+  position: relative;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.Kontent3BlockKnopka {
+  position: relative;
+  padding: 10px 55px;
+  border-radius: 20px;
+  border: solid 1px #63c1ae;
+  background: none;
+  font-size: 20px;
+  font-weight: 300;
+  color: #63c1ae;
+  cursor: pointer;
+  outline: none;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  margin: 20px;
+}
+.Kontent3BlockKnopka:hover {
+  background: #63c1ae;
+  color: white;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.Kontent3BlockKnopka:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+/*________________________________________________________________________________________________________________*/
+#Kontent4 {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background: url("../img/pic11.jpg") no-repeat 50% 50%/cover;
+}
+
+.Kontent4BlockText {
+  position: relative;
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+}
+
+.Kontent4BlockStroka {
+  position: relative;
+  font-size: 20px;
+  font-weight: 300;
+  color: white;
+}
+
+.Kontent4BlockKnopka {
+  position: relative;
+  padding: 10px 35px;
+  background: none;
+  border: solid 2px white;
+  border-radius: 20px;
+  font-size: 20px;
+  font-weight: 300;
+  color: white;
+  outline: none;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.Kontent4BlockKnopka:hover {
+  background: #4e4e4e8a;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.Kontent4BlockKnopka:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+/*________________________________________________________________________________________________________________*/
+#Gallerybox {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.GalleryText {
+  position: relative;
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.GalleryBlocks {
+  position: relative;
+  width: 400px;
+  height: 300px;
+  margin: 10px;
+  -webkit-box-shadow: -6px 7px 5px 0px #b1b1b1;
+          box-shadow: -6px 7px 5px 0px #b1b1b1;
+  padding: 0px;
+}
+.GalleryBlocks img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: pointer;
+}
+
+.GalleryModal {
+  position: fixed;
+  top: 0;
+  right: 0%;
+  width: 100%;
+  height: 100%;
+  background: #f5f5f5db;
+  display: none;
+  z-index: 999;
+}
+
+.GalleryModalBlock {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  width: 50%;
+  height: 600px;
+  background: grey;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+}
+
+.close {
+  position: absolute;
+  top: 0;
+  right: 0%;
+  font-size: 30px;
+  font-weight: 300;
+  color: white;
+  margin: 20px;
+  cursor: pointer;
+}
+
+/*________________________________________________________________________________________________________________*/
+footer {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background: #1E2832;
+}
+
+.FooterBlockText {
+  position: relative;
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+}
+
+.FooterBlockStroka {
+  position: relative;
+  font-size: 20px;
+  font-weight: 300;
+  color: white;
+}
+
+.footer-blocks {
+  position: relative;
+  margin: 0 auto;
+}
+
+.FooterBlockForm {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.FooterBlockFormInput {
+  position: relative;
+  width: 49%;
+  padding: 10px 10px;
+  background: #29333c;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 300;
+  color: #51BAA4;
+  outline: none;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  margin-bottom: 5px;
+}
+
+.FooterBlockFormTexter {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  padding: 10px;
+  background: #29333c;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 300;
+  color: #51BAA4;
+  outline: none;
+  margin-top: 5px;
+  resize: none;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.FooterBlockFormKnopka {
+  position: relative;
+  padding: 10px 35px;
+  background: #63c1ae;
+  font-size: 20px;
+  font-weight: 300;
+  color: white;
+  cursor: pointer;
+  outline: none;
+  border-radius: 20px;
+  border: none;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+  margin: 20px;
+}
+.FooterBlockFormKnopka:hover {
+  background: #51BAA4;
+}
+.FooterBlockFormKnopka:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.foote-blocks-links {
+  position: relative;
+  width: 100%;
+  border-top: solid 1px grey;
+}
+
+.footerBlockSilka {
+  position: relative;
+  width: 50px;
+  height: 100%;
+  display: inline-block;
+  margin: 20px;
+}
+.footerBlockSilka img {
+  position: relative;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.footerBlockCopirate {
+  position: relative;
+  font-size: 15px;
+  font-weight: 300;
+  color: white;
+  margin-top: 20px;
+}
+
+/*________________________________________________________________________________________________________________*/
+@media only screen and (max-width: 990px) {
+  .Kontent2Blocks img {
+    width: 100%;
+  }
+
+  .FooterBlockFormInput {
+    width: 100%;
+  }
+
+  .Kontent2-Block {
+    padding: 15px;
+  }
+
+  .Kontent2Blocks img {
+    margin: 0px 0px 20px 0px;
+  }
+}
+@media only screen and (max-width: 326px) {
+  body {
+    position: absolute;
+  }
+
+  .heder-block {
+    padding: 20px;
+  }
+
+  .Open-Mobile {
+    display: block;
+  }
+
+  .Open {
+    display: none;
+  }
+}
