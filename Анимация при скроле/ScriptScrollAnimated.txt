@@ -35,3 +35,57 @@ if(animItems.length > 0){
     animOnScroll();
   },300);*/
 }
+
+ПРИМЕР ЗАПИСИ В СSS:
+.KontentBlockTitle{
+	position: relative;
+	top: 0;
+	right: 0%;
+	width: 100%;
+	font-family: roboto;
+	font-size: 55px;
+	font-weight: 400;
+	color: white;
+	padding-top: 360px;
+	transform: translate(0px, 51px);
+    transition: 0.4s;
+    opacity: 0;
+}
+.KontentBlockTitle.active{
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+
+
+ПРИМЕР ЗАПИСИ В HTML:
+<p class="KontentBlockStroka anim-items anim-no-hide" class="text-white mb-4">WEB  студия для помощи в разработке сайтов.</p>
+
+
+ДРУГИЕ СКРИПТЫ ПО ПРОСЩЕ:
+
+/*const observer = new IntersectionObserver(entries => { // скрипт который проигрывает анимацию при скролле вниз
+  // Loop over the entries
+  entries.forEach(entry => {
+    // If the element is visible
+    if (entry.isIntersecting) {
+      // Add the animation class
+      entry.target.classList.add('active'); //класс созданый в css, для активации анимации
+    }
+  });
+});
+
+observer.observe(document.querySelector('.KontentBlockTitle')); // Родительские классы тегов, на который создана анимация в css 
+observer.observe(document.querySelector('.KontentBlockStroka'));*/
+
+/*const observer = new IntersectionObserver(entries => { // скрипт который проигрывает анимацию при скролле вниз и в верх
+  entries.forEach(entry => {
+    const square = entry.target.querySelector('.KontentBlockTitle');
+    if (entry.isIntersecting) {
+      square.classList.add('active');
+      return; // если класс добавлен, продолжать уже не надо
+    }
+    // перемещение завершено, теперь надо удалить класс
+    square.classList.remove('active');
+  });
+});
+observer.observe(document.querySelector('.square-wrapper'));*/// созщдайте тег который будет оборачивать тег с анимацией  что бы по нему скрипт орентировался 
