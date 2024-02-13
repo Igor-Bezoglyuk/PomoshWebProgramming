@@ -1,1 +1,60 @@
+1) <?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();?> <!--блокурует открытие файла header.php на премую через браузер. Пишется в начале каждого отдельного файла-->
+
+2) <?$APPLICATION->ShowHead();?> <!--Подключает к head, встроеные в битрике  теги meta  включая теги с атребутами utf8. Пишется в Head вместо стардатных тегов в  нём.-->
+
+3)  <?
+     use Bitrix\Main\Page\Asset; //включает функцию при помощи которой ты подключаешь стили, скрипты,шрифты и.т.д.
+
+     Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/assets/js/script.js"); //подключает скрипты по пути к файлу /js через  функцию SITE_TEMPLATE_PATH
+     Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/assets/css/style.css");// подключает стили  по пути к файлу /css через  функцию SITE_TEMPLATE_PATH
+     Asset::getInstance()->addString("<link href='https://fonts.googleapis.com/css2?family=Bad+Script&display=swap' rel='stylesheet'>","<link href='https://fonts.googleapis.com/css2?family=Pacifico&display=swap' rel='stylesheet'> "); 
+     Asset::getInstance()->addString('<meta name="viewport" content="width=device-width, initial-scale=1.0">'); // подключает  всё остальере , ссылки на шрифты,на скрипты,   по сети  через атрибут src без функции  SITE_TEMPLATE_PATH
+     Asset::getInstance()->addString('<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>'); 
+    ?>
+
+4) <div id="panel">
+   <?$APPLICATION->ShowPanel();?> <!-- Подключает к шаблону панель администратора битрикс с верху -->
+   </div>
+
+5) <a class="Header-top-Soc-links" href="https://t.me/+79147253940"><picture><source srcset="<?=SITE_TEMPLATE_PATH //подключает всё, по пути к файлу нужно вводить в атрибуты src="" ?>/assets/img/icon-top-telegram.webp" type="image/webp"><img src="<?=SITE_TEMPLATE_PATH?>/img/icon-top-telegram.png" alt=""></picture></a> <!--Подключает картинки и другой контент, битрикс при помощи этой комангды задаёт правельный для него путь к картинкам,стилям,скриптам и.т.д.-->
+
+6)<?$APPLICATION->IncludeComponent(//Выводит меню  , код вставляется за место меню. Если этот  код  вы замените  за место своего меню то там появится  меню которое вы создадите в битрикс
+	             "bitrix:menu", 
+	             "Home_menu", 
+	             array(
+		             "ALLOW_MULTI_SELECT" => "N",
+		             "DELAY" => "N",
+		             "MAX_LEVEL" => "1",
+		             "MENU_CACHE_GET_VARS" => array(
+		             ),
+		             "MENU_CACHE_TIME" => "3600",
+		             "MENU_CACHE_TYPE" => "N",
+		             "MENU_CACHE_USE_GROUPS" => "Y",
+		             "ROOT_MENU_TYPE" => "MainMenu",
+		             "USE_EXT" => "N",
+		             "COMPONENT_TEMPLATE" => "Home_menu",
+		             "CHILD_MENU_TYPE" => "left"
+	             ),
+	             false
+            );?>
+
+7) <?php if (!empty($arResult)): ?><!--Этот код пишется в  шаблоне мееню в файле Template.php. Выводит список страниц который ты создал в админке битрикса, не забудь подключить  код вывода меню в HTML за место меню-->
+    
+   <ul class="Header-Menu">
+    <?php foreach ($arResult as $item): ?>
+      <?php if($item["SWLECTED"]): ?>   <!--Цикл проверки  на выбор  страницы , функция позволяет выделять пункт меню когда ты находишся на выбраной странице. Нужно прописывать в многостраничном сайте-->
+         <li class="Menu-li"><a class="Menu-link" style="color:white;" href="<?= $item['LINK'] ?>"><?= $item['TEXT'] ?></a></li>
+      <?php else: ?> <!--В противном случае  он покажет стандартный  пункт меню без стилей выбора-->
+         <li class="Menu-li"><a class="Menu-link" href="<?= $item['LINK'] ?>"><?= $item['TEXT'] ?></a></li>
+      <?php endif; ?>    
+	<?php endforeach; ?>
+   </ul
+   <?php endif; ?>
+
+8) Для  создания своего типа  меню  для вашего кастамного меню для заказщика, в Админке Битрикса --> Настройках --> Управление структурой --> Пишеш свой тип меню  или  запоминаешь встроеные. Можешь удалить  стандартные типы меню и создать свои.
+
+9) Создание страниц для кастомного меню, переходим на сайт  в верхней панели сайта  Админ панели Битрикс . Жмём Создавть раздел  и пишем  названте к примеры Главная и всезде пиши главная и ок.
+
+10) Полсе создания страниц нам нужен код который будет выводить наше кастомное меню в нашем Html коде. Нажимаем в  верхнем админ панели битрикс на сайт Изменить страницу -->  удаляем содержимое страницы в редакторе и справа в меню списка ищем Меню навигации и вставляем  в поле редактора контента сайта визуальную часть в нижней части где показывают код страницы появится код вывода сайта в 6 пункте. Не забуте выйти из редактора сраници  без сохранения содержимого.
+
 
