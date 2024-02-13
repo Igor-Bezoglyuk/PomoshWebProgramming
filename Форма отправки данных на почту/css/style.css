@@ -1,0 +1,519 @@
+header{
+	position: relative;
+    top: -16px;
+    right: 1%;
+    width: 102%;
+    height: 100px;
+    background: #101010;
+}
+#headerBlock{
+	position: absolute;
+    top: 0;
+    right: 72%;
+    width: 28%;
+    height: 100px;
+    background: #ffd400;
+}
+#headerBlockText{
+	position: absolute;
+    top: -26px;
+    right: 33%;
+    width: 41%;
+    font-family: sans-serif;
+    font-size: 35px;
+    font-weight: 900;
+    text-shadow: 2px 2px 1px white;
+}
+#headerBlock2Img{
+	position: absolute;
+	top: 0;
+	right: 71%;
+    width: 27%;
+	height: 100px;
+	background:url(https://static.wixstatic.com/media/c19c76_e1ee443d4c5e4e3197a25eec7a0a97e5.png/v1/fill/w_47,h_49,al_c,q_80,usm_0.66_1.00_0.01/c19c76_e1ee443d4c5e4e3197a25eec7a0a97e5.webp);
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: 55px;
+}
+#Menu{
+	list-style: none;
+}
+li{
+	position: relative;
+    top: 21px;
+    right: -37%;
+    width: 10%;
+    float: left;
+	text-align: center;
+	font-family: monospace;
+	font-size: 25px;
+	margin-right: 10px;
+	
+}
+a{
+	height: 25px;
+	display: block;
+	padding: 15px 20px;
+	text-decoration: none;
+	color: white;
+}
+a:active{
+	color:grey;
+	border-radius: 20px;
+}
+
+/*_________________________________________________________________________________________________________________________*/
+
+#Kontent{
+	position: relative;
+    top: -17px;
+    right: 1%;
+    width: 102%;
+    height: 800px;
+    background:url(http://www.thomasfarina.com/wp-content/uploads/2017/01/best-places-for-night-photography-in-New-York-City-featured.jpg);
+    background-size: 143%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+#KontentBlock{
+	position: relative;
+	top: 0;
+	width: 100%;
+	height: 800px;
+	background:#00000094;
+}
+#KontentBlockText{
+	position: absolute;
+    top: 168px;
+    right: 25%;
+    width: 50%;
+    text-align: center;
+    font-family: monospace;
+    font-size: 60px;
+    font-weight: 900;
+    color: white;
+}
+
+/*_________________________________________________________________________________________________________________________*/
+
+#Kontent2{
+	position: relative;
+	top: -16px;
+	width: 100%;
+	height: 630px;
+
+}
+#Kontent2Text{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	text-align: center;
+	font-family: sans-serif;
+	font-size: 35px;
+	font-weight: 900;
+}
+#Kontent2Block{
+	position: relative;
+    top: 94px;
+    right: -18%;
+    width: 20%;
+    height: 478px;
+    display: inline-block;
+    margin-right: 30px;
+}
+#Kontent2BlockImg{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 190px;
+	background:url(https://static.wixstatic.com/media/c19c76_22d8ec47d1484b09a9c333e4141a12a0.jpg/v1/fill/w_300,h_227,al_c,q_80,usm_0.66_1.00_0.01/c19c76_22d8ec47d1484b09a9c333e4141a12a0.webp);
+	background-position: 50% 24%;
+    background-repeat: no-repeat;
+    background-size: 371px;
+}
+#Kontent2BlockImg2{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 190px;
+	background:url(https://static.wixstatic.com/media/c19c76_8c7f5eed08b047bdaaf2833985c4b3d7.jpg/v1/fill/w_300,h_227,al_c,q_80,usm_0.66_1.00_0.01/c19c76_8c7f5eed08b047bdaaf2833985c4b3d7.webp);
+	background-position: 50% 24%;
+    background-repeat: no-repeat;
+    background-size: 371px;
+}
+#Kontent2BlockImg3{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 190px;
+	background:url(https://static.wixstatic.com/media/c19c76_e1a7148276024a03a7b0772c5a8fb9e7.jpg/v1/fill/w_300,h_227,al_c,q_80,usm_0.66_1.00_0.01/c19c76_e1a7148276024a03a7b0772c5a8fb9e7.webp);
+	background-position: 50% 24%;
+    background-repeat: no-repeat;
+    background-size: 371px;
+}
+#Kontent2BlockText{
+	position: absolute;
+	top: 168px;
+	width: 100%;
+	text-align: center;
+	font-family: sans-serif;
+	font-size: 25px;
+}
+#Kontent2BlockStroka{
+	position: absolute;
+	top:236px;
+	width: 100%;
+	text-align: center;
+	font-family: monospace;
+	font-size: 20px;
+}
+
+/*_________________________________________________________________________________________________________________________*/
+
+#Kontent3{
+	position: relative;
+	right: 1%;
+    width: 102%;
+	height: 640px;
+	background: #f3f3f3;
+}
+#Kontent3Text{
+	position: absolute;
+    top: 1px;
+    right: 45%;
+    width: 30%;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 45px;
+    font-weight: 900;
+    color: #5d5d5d;
+}
+#Kontent3Stroka{
+	position: absolute;
+    top: 120px;
+    right: 52%;
+    width: 44%;
+    text-align: right;
+    font-family: monospace;
+    font-size: 20px;
+}
+#Kontent3Img{
+	position: absolute;
+	top: 0;
+	right: 0%;
+	width: 50%;
+	height: 640px;
+	background:url(http://www.thomasfarina.com/wp-content/uploads/2017/01/best-places-for-night-photography-in-New-York-City-featured.jpg);
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size:233%;
+}
+
+/*_________________________________________________________________________________________________________________________*/
+
+#Kontent4{
+	position: relative;
+	top: 0;
+	right: 1%;
+    width: 102%;
+	height: 150px;
+	background:#ffd400;
+}
+#Kontent4Block{
+	position: relative;
+    top: 0;
+    right: -8%;
+    width: 20%;
+    height: 150px;
+    display: inline-block;
+    margin-right: 10px;
+}
+#Kontent4BlockText{
+	position: absolute;
+    top: -48px;
+    width: 100%;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 65px;
+    color: white;
+}
+#Kontent4BlockStroka{
+	position: absolute;
+	top: 60px;
+	width: 100%;
+	text-align: center;
+	font-family: monospace;
+	font-size: 25px;
+}
+
+/*_________________________________________________________________________________________________________________________*/
+#Kontent5{
+	position: relative;
+	top: 0;
+	width: 100%;
+	height: 820px;
+}
+#Kontent5Text{
+	position: absolute;
+	top:0;
+	width: 100%;
+	text-align: center;
+	font-family: sans-serif;
+	font-size: 40px;
+	font-weight: 900;
+}
+#Kontent5Block{
+	position: relative;
+    top: 104px;
+    right: -16%;
+    width: 33%;
+    height: 325px;
+    background: grey;
+    display: inline-block;
+    margin-right: 15px;
+    margin-top: 15px;
+}
+#Kontent5BlockIMG{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 325px;
+	background:url(https://www.designcuts.com/wp-content/uploads/2018/12/Aerial-View-Of-New-York-City-Skyscrapers-Lit-Up-At-Night-2.jpg);
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+#Kontent5BlockIMG2{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 325px;
+	background:url(https://www.designcuts.com/wp-content/uploads/2018/12/Aerial-View-Of-New-York-City-Skyscrapers-Lit-Up-At-Night-2.jpg);
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+#Kontent5BlockIMG3{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 325px;
+	background:url(https://www.designcuts.com/wp-content/uploads/2018/12/Aerial-View-Of-New-York-City-Skyscrapers-Lit-Up-At-Night-2.jpg);
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+#Kontent5BlockIMG4{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 325px;
+	background:url(https://www.designcuts.com/wp-content/uploads/2018/12/Aerial-View-Of-New-York-City-Skyscrapers-Lit-Up-At-Night-2.jpg);
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+#Kontent5BlockSilka{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 325px;
+}
+#Kontent5BlockSilka:hover{
+   background:#ceccccab;
+   background-image:url(../img/icons850.png);
+   background-position: 50% 50%;
+   background-repeat: no-repeat;
+   background-size: 55px;
+}
+
+
+/*_________________________________________________________________________________________________________________________*/
+
+#Kontent6{
+	position: relative;
+	top:-11px;
+	right: 1%;
+	width: 102%;
+	height: 200px;
+	background:#f3f3f3;
+}
+#Kontent6Text{
+	position: absolute;
+	top:-27px;
+	width: 100%;
+	text-align: center;
+	font-family: sans-serif;
+	font-size: 40px;
+	font-weight: 900;
+}
+#Kontent6IMG{
+	position: absolute;
+    top: 91px;
+    right: 72%;
+    width: 20%;
+    height: 60px;
+    background: url(https://static.wixstatic.com/media/c19c76_cf4a17b1cf394757aa44ab9ba26df915.png/v1/fill/w_146,h_146,al_c,lg_1,q_80/c19c76_cf4a17b1cf394757aa44ab9ba26df915.webp);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 140px;
+}
+#Kontent6IMG2{
+	position: absolute;
+    top: 91px;
+    right: 52%;
+    width: 20%;
+    height: 60px;
+    background: url(https://static.wixstatic.com/media/c19c76_cf4a17b1cf394757aa44ab9ba26df915.png/v1/fill/w_146,h_146,al_c,lg_1,q_80/c19c76_cf4a17b1cf394757aa44ab9ba26df915.webp);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 140px;
+}
+#Kontent6IMG3{
+	position: absolute;
+    top: 91px;
+    right: 31%;
+    width: 20%;
+    height: 60px;
+    background: url(https://static.wixstatic.com/media/c19c76_cf4a17b1cf394757aa44ab9ba26df915.png/v1/fill/w_146,h_146,al_c,lg_1,q_80/c19c76_cf4a17b1cf394757aa44ab9ba26df915.webp);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 140px;
+}
+#Kontent6IMG4{
+	position: absolute;
+    top: 91px;
+    right: 9%;
+    width: 20%;
+    height: 60px;
+    background: url(https://static.wixstatic.com/media/c19c76_cf4a17b1cf394757aa44ab9ba26df915.png/v1/fill/w_146,h_146,al_c,lg_1,q_80/c19c76_cf4a17b1cf394757aa44ab9ba26df915.webp);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 140px;
+}
+
+/*_________________________________________________________________________________________________________________________*/
+
+#Kontent7{
+	position: relative;
+	top: -11px;
+	right: 1%;
+	width: 102%;
+	height: 335px;
+}
+#Kontent7Text{
+	position: absolute;
+	top: -35px;
+	width: 100%;
+	text-align: center;
+	font-family: sans-serif;
+	font-size: 40px;
+	font-weight: 900;
+}
+iframe{
+	position: absolute;
+    top: 65px;
+    right: 25%;
+    width: 50%;
+    height: 250px;
+}
+
+/*_________________________________________________________________________________________________________________________*/
+
+footer{
+	position: relative;
+	top: 0;
+	right: 1%;
+	width: 102%;
+	height: 400px;
+}
+#footerText{
+	position: absolute;
+    top: 0;
+    right: 60%;
+    width: 35%;
+    text-align: left;
+    font-family: sans-serif;
+    font-size: 27px;
+}
+#footerStroka{
+	position: absolute;
+    top: 43px;
+    right: 70%;
+    width: 25%;
+    text-align: left;
+    font-family: monospace;
+    font-size: 20px;
+}
+#footerForma{
+	position: absolute;
+    top: 31px;
+    right: 36%;
+    width: 28%;
+    height: 275px;
+    background: grey;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px black;
+}
+#formText{
+	position: relative;
+    top: -2px;
+    right: -19%;
+    width: 60%;
+    height: 25px;
+    display: block;
+    margin-top: 10px;
+}
+#formTextarea{
+	position: absolute;
+    top: 129px;
+    right: 20%;
+    width: 60%;
+    height: 90px;
+}
+#formKnopka{
+	position: absolute;
+    top: 238px;
+    right: 30%;
+    width: 40%;
+    height: 27px;
+	background: green;
+	border:none;
+	border-radius: 10px;
+	text-align: center;
+	font-family: monospace;
+	font-size: 20px;
+}
+#formKnopka:active{
+	background:aqua;
+	color: white;
+}
+#footerBlock{
+	position: absolute;
+    top: 0px;
+    right: 2%;
+    width: 30%;
+    height: 336px;
+}
+#footerBlockText{
+	position: absolute;
+    top: 0px;
+    right: 15%;
+    width: 84%;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 25px;
+}
+#footerBlockStroka{
+	position: relative;
+    top: 51px;
+    right: -2%;
+    width: 100%;
+    text-align: left;
+    font-family: monospace;
+    font-size: 20px;
+    display: block;
+    margin-top: 10px;
+}
+
+/*_________________________________________________________________________________________________________________________*/
