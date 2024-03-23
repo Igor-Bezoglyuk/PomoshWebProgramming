@@ -82,8 +82,8 @@ body.addEventListener('touchmove', (e) => {
   let x;
   
   let i;
-  for (i = 0; i < e.Slide_alementdTouches.length; i++) {
-  	x = e.Slide_alementdTouches[i].pageX; 
+  for (i = 0; i < e.changedTouches.length; i++) {
+  	x = e.changedTouches[i].pageX; 
   }
   
   x -= Before_Aftor.getBoundingClientRect().left;
